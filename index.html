@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<html>
+    <head>
+   	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+    <style>
+		    	* {
+		  box-sizing: border-box;
+		}
+
+		body {
+		  margin: 0;
+		  font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.header {
+		  text-align: center;
+		  padding: 32px;
+		}
+
+		.row {
+		  display: -ms-flexbox; /* IE 10 */
+		  display: flex;
+		  -ms-flex-wrap: wrap; /* IE 10 */
+		  flex-wrap: wrap;
+		  padding: 0 4px;
+		}
+
+		/* Create two equal columns that sits next to each other */
+		.column {
+		  -ms-flex: 50%; /* IE 10 */
+		  flex: 50%;
+		  padding: 0 4px;
+		}
+
+		.column img {
+		  margin-top: 8px;
+		  vertical-align: middle;
+		}
+
+		/* Style the buttons */
+		.btn {
+		  border: none;
+		  outline: none;
+		  padding: 10px 16px;
+		  background-color: #f1f1f1;
+		  cursor: pointer;
+		  font-size: 18px;
+		}
+
+		.btn:hover {
+		  background-color: #ddd;
+		}
+
+		.btn.active {
+		  background-color: #666;
+		  color: white;
+		}
+
+    	.wrapper {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+.wrapper2 {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+    	html, body { height: 100%; width: 100%; margin: 5px; display: table;}
+    	.container {
+		    width: 100%;
+		    border-radius: 5px;
+		}
+		
+		#first {
+		    width: 48%;
+		    float: left;
+		    height: 200px;
+		   	background-color: white;
+		    text-decoration-color: black;
+		    border: 2px solid white;
+		    border-radius: 5px;
+		}
+		#second {
+		    width: 48%;
+		    float: left;
+		    background-color: white;
+		    border: 2px solid white;
+		    border-radius: 5px;
+		    text-decoration-color: black;
+		    height: 460px;
+		    
+		}
+		#third {
+		    width: 48%;
+		    float: left;
+		    height: 810px;
+		    border: 2px solid white;
+		    border-radius: 5px;
+		    display: table;
+		}
+		
+		#fifth {
+		    width: 100%;
+		    background-color: white;
+		    border: 2px solid white;
+		    border-radius: 5px;
+		    height: 200px;
+		    
+		}
+		#sixth {
+		    width: 96.5%;
+		    background-color: white;
+		    border: 2px solid white;
+		    border-radius: 5px;
+		    height: 230px;
+		    
+		}
+		
+		#seventh {
+		    width: 48%;
+		    float: left;
+		    background-color: white;
+		    border: 2px solid white;
+		    border-radius: 5px;
+		    text-decoration-color: black;
+		    height: 905px;
+		    
+		}
+		h3 span { font-size:16px; }
+		p img {
+  float: left;
+}
+	svg{
+    display: block;
+    margin: auto;
+}
+
+	.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.node--leaf {
+  fill: white;
+}
+
+.label {
+  font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.label,
+.node--root,
+.node--leaf {
+  pointer-events: none;
+}
+    </style>
+     </head>
+    <body>
+
+    	<div class='container'>
+    	<div style="margin: 2px;" id="sixth">
+
+    	<p><img src="./images/profile.jpeg" style="width:150px;height:200px;margin-right:15px;"> <h1> Shailaja Sampat </h1>
+I am a Ph.D. student in Computer Science at <a href="https://www.asu.edu/"> Arizona State University</a>, USA.
+I am conducting research in Natural Language Understanding (NLP), Computer Vision and  Commonsense Reasoning domains under the guidance of <a href="http://www.public.asu.edu/~cbaral/">Prof. Chitta Baral</a>.
+<br/>
+<br/>
+I have finished my bachelors in Information and Communication Technology from <a href="https://ahduni.edu.in/">Ahmedabad University</a>, India. Along with academics, I have pursued various internships to get practical work exposure.
+<br/>
+<br/>
+<!--My non-technical interests include Entrepreneurship, Product Design, Philosophy of everyday life. In leisure time, I love to travel (adventures of course!), cook and do fine art activities.-->
+Feel free to say hi, if anything interesting we can talk about!</p>
+    	</div>
+    	
+    	<div style="margin: 2px;" id="third">
+    	<h3>What's New? <span>| Life is an Adventure, be the Explorer</span></h3>
+			<div class="row" onload="four()"> 
+			  <div class="column">
+			    <img src="./images/3.jpeg" style="width:100%" >
+			    <figcaption>Philips Research North America, 2019</figcaption>
+			    <img src="./images/8.jpeg" style="width:100%">
+			    <figcaption>Industrial Technology Research Institute, 2018</figcaption>
+			    <img src="./images/9.jpeg" style="width:100%">
+			     <figcaption>Industrial Technology Research Institute, 2018</figcaption>
+			    <img src="./images/7.jpeg" style="width:100%">
+			    <figcaption>Women of Color STEM Conference, 2018</figcaption>
+			     <img src="./images/2.jpeg" style="width:100%">
+			     <figcaption>MIT Entrepreneurship Bootcamp, 2016</figcaption>
+			    
+			    <!--<img src="./images/10.jpeg" style="width:100%">-->
+			    
+			    <img src="./images/13.jpeg" style="width:100%">
+			    <figcaption>Indian Institute of Technology- Bombay, 2016</figcaption>
+			    
+			  </div>
+			  <div class="column">
+			   <img src="./images/4.jpeg" style="width:100%">
+			   <figcaption>IJCAI Conference, 2019</figcaption>
+			   <img src="./images/1.jpeg" style="width:100%">
+			   <figcaption>IJCAI Conference, 2019</figcaption>
+			    
+			    <img src="./images/5.jpeg" style="width:100%"><figcaption>Philips Research North America, 2019</figcaption>
+			    
+
+			    <img src="./images/6.jpeg" style="width:100%"><figcaption>Women of Color STEM Conference, 2018</figcaption>
+			    
+			    <img src="./images/11.jpeg" style="width:100%"><figcaption>Coviam Tech. & Services Pvt. Ltd., 2016</figcaption>
+			    
+			    <img src="./images/12.jpeg" style="width:100%"><figcaption>MIT Entrepreneurship Bootcamp, 2016</figcaption>
+			    
+			  </div>  
+			 
+			</div>
+			<script>
+			var elements = document.getElementsByClassName("column");
+			var i;
+			function two() {
+			  for (i = 0; i < elements.length; i++) {
+			    elements[i].style.msFlex = "50%";  // IE10
+			    elements[i].style.flex = "50%";
+			  }
+			}
+			</script>
+
+            </div>
+
+          
+    
+
+  
+            <div style="margin: 2px;" id="first">
+            <h3>Education & Exprience <span>| The best way to predict your future is to create it.</span></h3>
+            <script src="scripts/d3.v4.js"></script>
+            <script> 
+            var width = 700,
+        height = 200;
+
+    //var data = [10, 15, 20, 25, 30];
+    
+    // Append SVG 
+    var svg3 = d3.select("#first").append("svg")
+                
+                .attr("width", width)
+                .attr("height", height);
+
+    // Create scale
+    var scale = d3.scaleLinear()
+                  .domain([2010, 2020])
+                  .range([0, width-100]);
+
+    // Add scales to axis
+    var x_axis = d3.axisBottom().ticks(10)
+                   .scale(scale);
+
+
+    //Append group and insert axis
+    svg3.append("g").attr("transform", "translate(15, 125)")
+       .call(x_axis);
+
+    var dataset = [[2010,2013.6,"High-school","./images/cn.jpeg"],[2013.65,2017.6,"Undergraduate","./images/au.jpeg"],[2017.65,2020,"Doctorate","./images/asu.svg"]]
+     var dataset2 = [[2016.33,2016.55,"Research","./images/iitb.jpeg"],[2017,2017.5,"Industry","./images/coviam.jpg"],[2018.33,2018.55,"Research","./images/itri.jpeg"],[2019.33,2019.55,"Industry","./images/phil.png"]]
+
+    for (i = 0; i < dataset.length; i++) {
+    svg3//.selectAll("rect")
+			   //.data(dataset)
+			   //.enter()
+			   .append("rect")
+			   .attr("x", scale(dataset[i][0])+15)
+			   	/*function(d, i) {
+			   		return xScale(i);
+			   })*/
+			   .attr("y", 60)
+			   	/*function(d) {
+			   		return height - yScale(d);
+			   })*/
+			   .attr("width",scale(dataset[i][1])-scale(dataset[i][0]))
+			   	/*,function(d) {
+			   		return scale(d);
+			   })*/
+			   .attr("height", 15)
+			   .style("fill", "blue")
+			   .style("opacity",0.5)
+			   ;
+
+			svg3.append("text")
+		    .attr("x", scale(dataset[i][0])+(scale(dataset[i][1])-scale(dataset[i][0]))/2-25)
+		    .attr("y", 73)
+		    .text(dataset[i][2])
+		    .attr("font-size",12);
+
+			
+
+			svg3.append("svg:image")
+		    .attr("xlink:href",dataset[i][3] )
+		    .attr("width", 80)
+		    .attr("height", 50)
+		    .attr("x", scale(dataset[i][0])+(scale(dataset[i][1])-scale(dataset[i][0]))/2-25)
+		    .attr("y",75); }
+
+
+    for (i = 0; i < dataset2.length; i++) {
+    svg3//.selectAll("rect")
+			   //.data(dataset)
+			   //.enter()
+			   .append("rect")
+			   .attr("x", scale(dataset2[i][0])+15)
+			   	/*function(d, i) {
+			   		return xScale(i);
+			   })*/
+			   .attr("y", 43)
+			   	/*function(d) {
+			   		return height - yScale(d);
+			   })*/
+			   .attr("width",scale(dataset2[i][1])-scale(dataset2[i][0]))
+			   	/*,function(d) {
+			   		return scale(d);
+			   })*/
+			   .attr("height", 15)
+			   .style("fill", "red")
+			   .style("opacity",0.5)
+			   ;
+
+			svg3.append("text")
+		    .attr("x", scale(dataset2[i][0])+(scale(dataset2[i][1])-scale(dataset2[i][0]))/2-5)
+		    .attr("y", 55)
+		    .text(dataset2[i][2]).attr("font-size",11);
+
+			svg3.append("svg:image")
+		    .attr("xlink:href",dataset2[i][3] )
+		    .attr("width", 70)
+		    .attr("height", 40)
+		    .attr("x", scale(dataset2[i][0])+(scale(dataset2[i][1])-scale(dataset2[i][0]))/2-20)
+		    .attr("y",0); }
+             </script>
+		
+            </div>
+
+             <div class="wrapper" style="margin: 2px;" id="second">
+
+             <h3>Research Interests <span>| Well, that worked! </span></h3>
+             <p><img src="./images/nlp.jpeg" style="width:70px;height:70px;margin-right:25px;margin-left:65px;"> <img src="./images/vision.png" style="width:80px;height:70px;margin-right:25px;margin-left:95px;"> <img src="./images/dav.png" style="width:70px;height:70px;margin-right:25px;margin-left:95px;"> </p>
+              
+              <br/>
+              <br/>
+               <br/>
+              <p> Natural Language Processing &emsp; Computer Vision &emsp; Data Analytics and Visualization </p>
+           
+
+              <h3> <span>Word-cloud of my research publications </span></h3>
+			 <p>  </p>
+			  <script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+			 <script>
+
+    var frequency_list = [{"text":"question answering","size":35},{"text":"knowledge","size":40},{"text":"natural language","size":45},{"text":"reasoning","size":40},{"text":"blocks","size":15},{"text":"event sequencing","size":10},{"text":"inductive","size":15},{"text":"blocksworld","size":15},{"text":"visual","size":5},{"text":"learning","size":30},{"text":"vector","size":5},{"text":"perception","size":15},{"text":"recognition","size":5},{"text":"length","size":5},{"text":"vision","size":30},{"text":"neural networks","size":30},{"text":"spatial","size":5},{"text":"temporal","size":5},{"text":"modular","size":10},{"text":"generalization","size":35},{"text":"experiments","size":20},{"text":"encoder","size":5},{"text":"constraints","size":5},{"text":"cognitive","size":15},{"text":"accracy","size":35},{"text":"semantic","size":20},{"text":"intelligence","size":5},{"text":"architectures","size":25},{"text":"outperform","size":5},{"text":"hypothesis","size":5},{"text":"image","size":45},{"text":"clingo","size":10},{"text":"query","size":15},{"text":"visual reasoning","size":30},{"text":"training","size":25},{"text":"supervised","size":25},{"text":"classification","size":20},
+    {"text":"visualized","size":25},{"text":"linguistic","size":5},{"text":"logic","size":35},{"text":"heuristic","size":5},{"text":"grounding","size":15},{"text":"evaluation","size":25},{"text":"outperform","size":5},{"text":"hypothesis","size":5},{"text":"image","size":45},{"text":"entailment","size":30},{"text":"crowdsourced","size":15},{"text":"data","size":40},{"text":"data journalism","size":15},{"text":"data visualization","size":15},{"text":"interactive","size":20},{"text":"design","size":15},{"text":"insights","size":40},{"text":"communication","size":15},{"text":"evaluation","size":25},{"text":"outperform","size":5},{"text":"hypothesis","size":5},{"text":"relationships","size":45},{"text":"infographics","size":20},{"text":"knowledge discovery","size":15},{"text":"granularity","size":5},{"text":"data journalism","size":15},{"text":"dimensionality","size":25},{"text":"amalgamation","size":15}];
+
+
+    var color = d3.scale.linear()
+            .domain([0,1,2,3,4,5,6,10,15,20,50])
+            .range(["#ddd", "#ccc", "#bbb", "#aaa", "#999", "#888", "#777", "#666", "#555", "#444", "#333", "#222"]);
+
+    d3.layout.cloud().size([550, 250])
+            .words(frequency_list)
+            .rotate(0)
+            .fontSize(function(d) { return d.size; })
+            .on("end", draw)
+            .start();
+
+    function draw(words) {
+        d3.select("#second").append("svg")
+                .attr("width", 600)
+                .attr("height", 250)
+                .attr("class", "wordcloud")
+                .append("g")
+                // without the transform, words words would get cutoff to the left and top, they would
+                // appear outside of the SVG area
+                .attr("transform", "translate(150,130)")
+                .selectAll("text")
+                .data(words)
+                .enter().append("text")
+                .style("font-size", function(d) { return d.size-10 + "px"; })
+                .style("fill", function(d, i) { return color(i); })
+                .attr("transform", function(d) {
+                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                })
+                .text(function(d) { return d.text; });
+    }
+</script>
+				
+            </div>
+
+             <div class="wrapper" style="margin: 2px;" id="seventh">
+              <h3>Skills <span>| Things I've picked up over the years...
+
+ </span></h3>
+ (click on circles to see details, click outside circles on green region to zoomout)
+             
+<script src="scripts/d3.v4.js"></script>
+<script>
+
+var svg2 = d3.select("#seventh").append("svg")
+                .attr("width", 500)
+                .attr("height", 500);
+               
+var margin = 20,
+    diameter = +svg2.attr("width"),
+    g = svg2.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+
+var color = d3.scaleLinear()
+    .domain([-1, 5])
+    .range(["hsl(152,80%,80%)", "hsl(228,30%,40%)"])
+    .interpolate(d3.interpolateHcl);
+
+var pack = d3.pack()
+    .size([diameter - margin, diameter - margin])
+    .padding(2);
+
+d3.json("flare2.json", function(error, root) {
+  if (error) throw error;
+
+  root = d3.hierarchy(root)
+      .sum(function(d) { return d.size; })
+      .sort(function(a, b) { return b.value - a.value; });
+
+  var focus = root,
+      nodes = pack(root).descendants(),
+      view;
+
+  var circle = g.selectAll("circle")
+    .data(nodes)
+    .enter().append("circle")
+      .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
+      .style("fill", function(d) { return d.children ? color(d.depth) : null; })
+      .on("click", function(d) { if (focus !== d) zoom(d), d3.event.stopPropagation(); });
+
+  var text = g.selectAll("text")
+    .data(nodes)
+    .enter().append("text")
+      .attr("class", "label")
+      .style("fill-opacity", function(d) { return d.parent === root ? 1 : 0; })
+      .style("display", function(d) { return d.parent === root ? "inline" : "none"; })
+      .text(function(d) { return d.data.name; });
+
+  var node = g.selectAll("circle,text");
+
+  svg2
+      .style("background", color(-1))
+      .on("click", function() { zoom(root); });
+
+  zoomTo([root.x, root.y, root.r * 2 + margin]);
+
+  function zoom(d) {
+    var focus0 = focus; focus = d;
+
+    var transition = d3.transition()
+        .duration(d3.event.altKey ? 7500 : 750)
+        .tween("zoom", function(d) {
+          var i = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2 + margin]);
+          return function(t) { zoomTo(i(t)); };
+        });
+
+    transition.selectAll("text")
+      .filter(function(d) { return d.parent === focus || this.style.display === "inline"; })
+        .style("fill-opacity", function(d) { return d.parent === focus ? 1 : 0; })
+        .on("start", function(d) { if (d.parent === focus) this.style.display = "inline"; })
+        .on("end", function(d) { if (d.parent !== focus) this.style.display = "none"; });
+  }
+
+  function zoomTo(v) {
+    var k = diameter / v[2]; view = v;
+    node.attr("transform", function(d) { return "translate(" + (d.x - v[0]) * k + "," + (d.y - v[1]) * k + ")"; });
+    circle.attr("r", function(d) { return d.r * k; });
+  }
+});
+
+</script>
+			<h3>Non-tech Interests & Hobbies <span>| There is no secret ingredient... It's just you. </span></h3>
+              <p><img src="./images/enter.png" style="width:70px;height:70px;margin-right:25px;margin-left:25px;"> <img src="./images/philo.png" style="width:70px;height:70px;margin-right:25px;margin-left:30px;"> <img src="./images/lang.jpeg" style="width:70px;height:70px;margin-right:5px;margin-left:40px;"> <img src="./images/travel.png" style="width:70px;height:70px;margin-right:5px;margin-left:40px;"> <img src="./images/cook.jpeg" style="width:70px;height:70px;margin-right:5px;margin-left:25px;"> <img src="./images/arts.jpeg" style="width:70px;height:70px;margin-right:5px;margin-left:25px;"> </p>
+              <br/>
+              <br/>
+               <br/>
+              <p> Entrepreneurship &emsp; Philosophy &emsp; Language Learning &emsp; Travel &emsp; &emsp; Cooking &emsp; &emsp; Fine-arts </p>
+
+              <h3>Let's grab a cup! <span>| Tea? Why not! Because Coffee ain't my cup of tea!
+ </span></h3>
+			<p> <b> Location: </b> BYENG 569BA (Brickyard Engineering), 699 S. Mill Ave., Tempe, Arizona 85281
+ 
+			<p> <b> Cell: </b>+1-901-279-3904 </p>
+			<a href="mailto: shailaja.sampat96@gmail.com" class="fa fa-google"></a>
+			<a href="https://www.facebook.com/shailaja183" class="fa fa-facebook"></a>
+			
+			<a href="https://www.linkedin.com/in/shailaja-sampat/" class="fa fa-linkedin"></a>
+            </div>
+            <!--<div style="margin: 2px;" id="eighth">
+            
+            </div>-->
+
+            </div>
+       
+
+        
+    </body>
+</html>
