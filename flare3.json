@@ -1,0 +1,72 @@
+{
+ "name": "flare",
+ "children": [
+  {
+   "name": "Programming",
+   "children": [
+    {"name": "Python","size": 8000},
+    {"name": "Java", "size": 6000},
+    {"name": "C/C++", "size": 4000},
+    {"name": "Shell/Bash", "size": 7000},
+    {"name": "HTML/CSS/JS", "size": 5000}
+   ]
+  }, 
+  {
+   "name": "Computational",
+   "children": [
+    {"name": "Apache Kafka", "size": 5000},
+    {"name": "Apache Zookeeper", "size": 4000},
+    {"name": "Apache Spark", "size": 5000},
+    {"name": "ElasticSearch", "size": 7000},
+    {"name": "MATLAB", "size": 7000},
+    {"name": "LabVIEW", "size": 3000},
+    {"name": "Hadoop", "size": 4000}
+   ]
+  },
+  {
+   "name": "Databases",
+   "children": [
+    {"name": "MySQL", "size": 8000},
+    {"name": "NoSQL", "size": 5000},
+    {"name": "GraphDB", "size": 8000}
+   ]
+  },
+  {
+   "name": "Analytics/Visualization",
+   "children": [
+    {"name": "R", "size": 7000},
+    {"name": "Weka", "size": 3000},
+    {"name": "Tableau", "size": 5000},
+    {"name": "D3.js", "size": 7000},
+    {"name": "Orange", "size": 500}
+   ]
+  },
+  {
+   "name": "Languages",
+   "children": [
+    {"name": "English", "size": 7000},
+    {"name": "Hindi", "size": 7000},
+    {"name": "Gujarati", "size": 7000},
+    {"name": "French", "size": 1000},
+    {"name": "Japanese", "size": 1000},
+    {"name": "Urdu", "size": 500}
+   ]
+  },
+  {
+   "name": "AI/ML",
+   "children": [
+    {"name": "NLTK", "size": 8000},
+    {"name": "Scikit", "size": 5000},
+    {"name": "Pandas", "size": 5000},
+    {"name": "MLLib", "size": 500},
+    {"name": "Caffe", "size": 2000},
+    {"name": "Tensorflow", "size": 4000},
+    {"name": "Pytorch", "size": 6000},
+    {"name": "OpenCV", "size": 5000},
+    {"name": "ROS", "size": 500},
+    {"name": "Answer Set Programming", "size": 8000},
+    {"name": "DialogFlow", "size": 500}
+   ]
+  }
+ ]
+}
